@@ -7,5 +7,8 @@ public class ProducerConsumer {
         producer.produce();
         Consumer consumer = new Consumer(broker);
         consumer.consume();
+        //broker.notify();
+        Thread.yield();
+        System.out.println("Thread count : " + Thread.activeCount());
     }
 }

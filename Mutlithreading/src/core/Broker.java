@@ -11,7 +11,7 @@ public class Broker {
     private int CAPACITY;
     private int size;
 
-    Broker(int capacity) {
+    public Broker(int capacity) {
         this.CAPACITY = capacity;
         queue = new LinkedList<>();
         size = 0;
